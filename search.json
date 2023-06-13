@@ -1,17 +1,24 @@
 [
   {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "我相信，每个人的一生，若是细细记录下其中的琐碎日常，皆可集结成书。"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
-    "text": "欢迎来到属于陈斯翔的个人小空间。\nThis is Angel’s first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "欢迎来到属于陈斯翔的个人小空间。\nThis is Angel’s first post in a Quarto blog. Welcome!"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Angel’s Blabla Blog",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\nAngel Chen\n\n\n\n\n\n\nNo matching items"
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\nAngel Chen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
