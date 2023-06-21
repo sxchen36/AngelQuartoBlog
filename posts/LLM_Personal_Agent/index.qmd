@@ -1,0 +1,15 @@
+---
+title: "搭建一个私人专属Personal Agent"
+author: "Angel Chen"
+date: "2023-06-20"
+categories: [code, llm]
+image: "Emerging-LLM-App-Stack.webp"
+---
+
+![](Emerging-LLM-App-Stack.webp)
+
+参考架构
+https://a16z.com/2023/06/20/emerging-architectures-for-llm-applications/
+
+
+

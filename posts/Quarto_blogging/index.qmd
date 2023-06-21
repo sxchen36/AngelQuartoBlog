@@ -1,0 +1,64 @@
+---
+title: "Quarto_blogging"
+author: "Angel Chenc"
+date: "2023-06-12"
+categories: [code, beginner, deep learning]
+image: "image.jpg"
+---
+
+This blog is solely serving two purpose: 1) to document my baby-step efforts and learnings when using Quarto to setup my blog 2) to envourage whoever comes half-step behind me to give it a try as it is not hard, and once it's done, it's super cool!
+
+As a side note, I am doing this blogging setup on my M1 Mac with VSCode as my Editor. I am also uploading my blog's source code to my Git repository
+
+# Environment Setup
+## Python
+You can install python and its library with the straight-forward command:
+`python3 -m pip install jupyter matplotlib plotly`
+
+### (Optional) Virtual Python Environment
+Quote Python's official documentation
+
+> A virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system
+
+It is optional for setting up python. But as an OCD girl who always wants to keep my system setup as clean as possible, I personally feel mandatory to use virtual environment to constraint my python environment for each of the project, instead of polluting the system python environment. 
+
+And I am using virualenv to achieve so.
+
+If you want a clean setup, just follow me to do a few trivial things as below:
+
+(@) Install VirtualEnv
+It is the essential tool to allow you create virtual python environment for each projects in future. Depends on your system setup, one of this command may work for you:
+ <div> `pip install virtualenv` if you've already have pip installed 
+ <div> `pip3 install virtualenv` if you have pip3/python3 installed 
+ <div> `brew install pyenv` if you are starting from a fresh Mac environment
+
+(@) Create a new python environment for a new project:
+ <div>`python<version> -m venv <virtual-environment-name>`
+ <div> For example:
+ <div> `mkdir projectA && cd projectA && python3.8 -m venv myFirstEnv`
+
+(@) Activate the Virtual Environemnt
+<div> `source myFirstEnv/bin/activate`
+<div> You should be able to the name of your virtual environment in your terminal path. It indicating your are within an activated environent.
+
+(@) Deactivate the Virtual Environment
+Run `deactivate` in terminal will deactivate the project and leave the virtual environment
+
+### Other Python tips
+1. Don't share or check-in your python env folder. For example, if you are pushing your project to git, adding the env to the .gitignore file.
+2. Using `pip freeze > requirements.txt` to generate a file including all python libraries. Using `pip install -r requirements.txt` to install all dependencies for a given project
+
+
+## VSCode & Extensions
+* Download VSCode from the [official side](https://code.visualstudio.com/)
+* Install Python extension
+* Install Quarto VS Code extension. You can follow [Quarto's tutorial](https://quarto.org/docs/get-started/hello/vscode.html)
+* (Optional) If you are using Virtual Environemtn, you need to [select the right python intepreter for your project](https://stackoverflow.com/questions/58470563/how-do-you-get-visual-studio-code-to-use-different-python-interpreter): 
+  + For choosing interpreter, press `ctrl + p` and then type `>Python: Select Interpreter` (don't forget the `>` character! if it doesn't show up, make sure you have installed python extension on your vs code) and select one of the options. It will show you available interpreters (virtual environments + the global environment) to choose.
+
+
+# Reference
+* https://quarto.org/docs/authoring/markdown-basics.html
+
+
+
