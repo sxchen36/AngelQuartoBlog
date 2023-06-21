@@ -1,14 +1,15 @@
 ---
 title: "Quarto_blogging"
-author: "Angel Chenc"
+author: "Angel Chen"
 date: "2023-06-12"
 categories: [code, beginner, deep learning]
 image: "image.jpg"
 ---
+![](image.jpg)
 
 This blog is solely serving two purpose: 1) to document my baby-step efforts and learnings when using Quarto to setup my blog 2) to envourage whoever comes half-step behind me to give it a try as it is not hard, and once it's done, it's super cool!
 
-As a side note, I am doing this blogging setup on my M1 Mac with VSCode as my Editor. I am also uploading my blog's source code to my Git repository
+As a side note, I am doing this blogging setup on my M1 Mac with VSCode as my Editor. I am also uploading my blog's source code to my [Git repository](https://sxchen36.github.io/AngelQuartoBlog/?)
 
 # Environment Setup
 ## Python
@@ -57,6 +58,10 @@ Run `deactivate` in terminal will deactivate the project and leave the virtual e
   + For choosing interpreter, press `ctrl + p` and then type `>Python: Select Interpreter` (don't forget the `>` character! if it doesn't show up, make sure you have installed python extension on your vs code) and select one of the options. It will show you available interpreters (virtual environments + the global environment) to choose.
 * (Optional) Install Git extension. I personally still prefer using git from terminal, but sometimes the VS Code extension comes handle for quick commit.
 
+# Create Quarto Blog
+
+* Call `quarto publish gh-pages` inside your project in terminal to publish your first blog!
+* Note that above command does NOT check in your code. Do your diligent to git commit & git push to your git repository to save your source code
 
 # Reference
 * https://quarto.org/docs/authoring/markdown-basics.html
