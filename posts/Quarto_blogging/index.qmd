@@ -55,6 +55,7 @@ Run `deactivate` in terminal will deactivate the project and leave the virtual e
 * Install Quarto VS Code extension. You can follow [Quarto's tutorial](https://quarto.org/docs/get-started/hello/vscode.html)
 * (Optional) If you are using Virtual Environemtn, you need to [select the right python intepreter for your project](https://stackoverflow.com/questions/58470563/how-do-you-get-visual-studio-code-to-use-different-python-interpreter): 
   + For choosing interpreter, press `ctrl + p` and then type `>Python: Select Interpreter` (don't forget the `>` character! if it doesn't show up, make sure you have installed python extension on your vs code) and select one of the options. It will show you available interpreters (virtual environments + the global environment) to choose.
+* (Optional) Install Git extension. I personally still prefer using git from terminal, but sometimes the VS Code extension comes handle for quick commit.
 
 
 # Reference
