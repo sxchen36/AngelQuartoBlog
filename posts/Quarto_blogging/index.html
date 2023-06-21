@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Angel Chen">
+<meta name="author" content="Angel Chenc">
 <meta name="dcterms.date" content="2023-06-12">
 
-<title>Angel Chen | 陈斯翔 - Welcome To My Blog</title>
+<title>Angel Chen | 陈斯翔 - Quarto_blogging</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,9 +108,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">Quarto_blogging</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">beginner</div>
+                <div class="quarto-category">deep learning</div>
               </div>
                   </div>
   </div>
@@ -121,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Angel Chen </p>
+               <p>Angel Chenc </p>
             </div>
     </div>
       
@@ -146,13 +148,75 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="image.png" class="img-fluid"></p>
-<p>欢迎来到属于陈斯翔的个人小空间。</p>
-<p>This is Angel’s first post in a Quarto blog. Welcome!</p>
-<p>我相信，每个人的一生，若是能记录下其中的琐碎日常，皆可集结成书。</p>
-<p>此处，是我的思考行动故事集。</p>
+<p>This blog is solely serving two purpose: 1) to document my baby-step efforts and learnings when using Quarto to setup my blog 2) to envourage whoever comes half-step behind me to give it a try as it is not hard, and once it’s done, it’s super cool!</p>
+<p>As a side note, I am doing this blogging setup on my M1 Mac with VSCode as my Editor. I am also uploading my blog’s source code to my Git repository</p>
+<section id="environment-setup" class="level1">
+<h1>Environment Setup</h1>
+<section id="python" class="level2">
+<h2 class="anchored" data-anchor-id="python">Python</h2>
+<p>You can install python and its library with the straight-forward command: <code>python3 -m pip install jupyter matplotlib plotly</code></p>
+<section id="optional-virtual-python-environment" class="level3">
+<h3 class="anchored" data-anchor-id="optional-virtual-python-environment">(Optional) Virtual Python Environment</h3>
+<p>Quote Python’s official documentation</p>
+<blockquote class="blockquote">
+<p>A virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system</p>
+</blockquote>
+<p>It is optional for setting up python. But as an OCD girl who always wants to keep my system setup as clean as possible, I personally feel mandatory to use virtual environment to constraint my python environment for each of the project, instead of polluting the system python environment.</p>
+<p>And I am using virualenv to achieve so.</p>
+<p>If you want a clean setup, just follow me to do a few trivial things as below:</p>
+<ol class="example" type="1">
+<li><p>Install VirtualEnv It is the essential tool to allow you create virtual python environment for each projects in future. Depends on your system setup, one of this command may work for you:</p>
+<div>
+<p><code>pip install virtualenv</code> if you’ve already have pip installed</p>
+<div>
+<p><code>pip3 install virtualenv</code> if you have pip3/python3 installed</p>
+<div>
+<p><code>brew install pyenv</code> if you are starting from a fresh Mac environment</p></div></div></div></li>
+<li><p>Create a new python environment for a new project:</p>
+<div>
+<p><code>python&lt;version&gt; -m venv &lt;virtual-environment-name&gt;</code></p>
+<div>
+<p>For example:</p>
+<div>
+<p><code>mkdir projectA &amp;&amp; cd projectA &amp;&amp; python3.8 -m venv myFirstEnv</code></p></div></div></div></li>
+<li><p>Activate the Virtual Environemnt</p>
+<div>
+<p><code>source myFirstEnv/bin/activate</code></p>
+<div>
+<p>You should be able to the name of your virtual environment in your terminal path. It indicating your are within an activated environent.</p></div></div></li>
+<li><p>Deactivate the Virtual Environment Run <code>deactivate</code> in terminal will deactivate the project and leave the virtual environment</p></li>
+</ol>
+</section>
+<section id="other-python-tips" class="level3">
+<h3 class="anchored" data-anchor-id="other-python-tips">Other Python tips</h3>
+<ol type="1">
+<li>Don’t share or check-in your python env folder. For example, if you are pushing your project to git, adding the env to the .gitignore file.</li>
+<li>Using <code>pip freeze &gt; requirements.txt</code> to generate a file including all python libraries. Using <code>pip install -r requirements.txt</code> to install all dependencies for a given project</li>
+</ol>
+</section>
+</section>
+<section id="vscode-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="vscode-extensions">VSCode &amp; Extensions</h2>
+<ul>
+<li>Download VSCode from the <a href="https://code.visualstudio.com/">official side</a></li>
+<li>Install Python extension</li>
+<li>Install Quarto VS Code extension. You can follow <a href="https://quarto.org/docs/get-started/hello/vscode.html">Quarto’s tutorial</a></li>
+<li>(Optional) If you are using Virtual Environemtn, you need to <a href="https://stackoverflow.com/questions/58470563/how-do-you-get-visual-studio-code-to-use-different-python-interpreter">select the right python intepreter for your project</a>:
+<ul>
+<li>For choosing interpreter, press <code>ctrl + p</code> and then type <code>&gt;Python: Select Interpreter</code> (don’t forget the <code>&gt;</code> character! if it doesn’t show up, make sure you have installed python extension on your vs code) and select one of the options. It will show you available interpreters (virtual environments + the global environment) to choose.</li>
+</ul></li>
+<li>(Optional) Install Git extension. I personally still prefer using git from terminal, but sometimes the VS Code extension comes handle for quick commit.</li>
+</ul>
+</section>
+</section>
+<section id="reference" class="level1">
+<h1>Reference</h1>
+<ul>
+<li>https://quarto.org/docs/authoring/markdown-basics.html</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
