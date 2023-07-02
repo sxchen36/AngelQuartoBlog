@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sxchen36.github.io/AngelQuartoBlog/posts/Quarto_blogging/index.html</loc>
+    <lastmod>2023-07-02T21:48:48.727Z</lastmod>
+  </url>
+  <url>
     <loc>https://sxchen36.github.io/AngelQuartoBlog/posts/welcome/index.html</loc>
-    <lastmod>2023-07-02T21:31:36.546Z</lastmod>
+    <lastmod>2023-07-02T21:48:49.258Z</lastmod>
   </url>
   <url>
     <loc>https://sxchen36.github.io/AngelQuartoBlog/index.html</loc>
-    <lastmod>2023-07-02T21:31:36.853Z</lastmod>
+    <lastmod>2023-07-02T21:48:49.624Z</lastmod>
   </url>
   <url>
     <loc>https://sxchen36.github.io/AngelQuartoBlog/about.html</loc>
-    <lastmod>2023-07-02T21:31:37.107Z</lastmod>
+    <lastmod>2023-07-02T21:48:49.879Z</lastmod>
   </url>
 </urlset>

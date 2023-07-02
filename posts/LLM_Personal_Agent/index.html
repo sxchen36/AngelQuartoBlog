@@ -88,12 +88,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/" rel="" target=""><i class="bi bi-github" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://username.github.io" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -149,8 +144,13 @@ ul.task-list li input[type="checkbox"] {
 
 <p><img src="Emerging-LLM-App-Stack.webp" class="img-fluid"></p>
 <p>参考架构 https://a16z.com/2023/06/20/emerging-architectures-for-llm-applications/</p>
+<p>Pinecone https://docs.pinecone.io/docs/indexes Vector Database for AI。 适合储存数据&amp;根据相似性提取数据。相似性有助于缩小LLM提供答案的空间。For similarity search: Finding similar items based on fixed numeric criteria in non-SQL db</p>
+<section id="key-concept" class="level3">
+<h3 class="anchored" data-anchor-id="key-concept">Key Concept</h3>
+<p><strong>Vector-embedding</strong>: Also called vector representation, or sometimes just vector. Represents real-world objects and concepts as a set of continuous numbers. Usually created by training models (ex. Word2Vec for text data, VGG for image data) <strong>Semantic Similarity</strong>: how close objects’ vectors are in the vector space. It can be measured with many similariy measures, typical examples: Cosine similarity, Euclidean distance, Dot product <strong>Similarity Search</strong>: Also called vector search. Given a set of vectors and a query vector, we need to find the most similar items in our set for the query, aka the nearest vectors to the query vector. <strong>Index</strong> Verb: Index vectors means using some algorithm transform the vector representation into a compressed form to optimize the query process. Ex. Without indexing, similarity search will check distances between each vector in the space (K Nearest Neighbors KNN search) . While with indexing, we can narrow down the search space thus improve lookup times. It’s being used as part of the Approximately Nearest Neighbors (ANN) search <strong>Extend reading</strong>: https://www.pinecone.io/learn/what-is-similarity-search/</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
