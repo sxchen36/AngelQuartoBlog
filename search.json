@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "posts/Quarto_blogging/index.html",
-    "href": "posts/Quarto_blogging/index.html",
-    "title": "Quarto_blogging",
-    "section": "",
-    "text": "This blog is solely serving two purpose: 1) to document my baby-step efforts and learnings when using Quarto to setup my blog 2) to envourage whoever comes half-step behind me to give it a try as it is not hard, and once it’s done, it’s super cool!\nAs a side note, I am doing this blogging setup on my M1 Mac with VSCode as my Editor. I am also uploading my blog’s source code to my Git repository"
-  },
-  {
-    "objectID": "posts/Quarto_blogging/index.html#python",
-    "href": "posts/Quarto_blogging/index.html#python",
-    "title": "Quarto_blogging",
-    "section": "Python",
-    "text": "Python\nYou can install python and its library with the straight-forward command: python3 -m pip install jupyter matplotlib plotly\n\n(Optional) Virtual Python Environment\nQuote Python’s official documentation\n\nA virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system\n\nIt is optional for setting up python. But as an OCD girl who always wants to keep my system setup as clean as possible, I personally feel mandatory to use virtual environment to constraint my python environment for each of the project, instead of polluting the system python environment.\nAnd I am using virualenv to achieve so.\nIf you want a clean setup, just follow me to do a few trivial things as below:\n\nInstall VirtualEnv It is the essential tool to allow you create virtual python environment for each projects in future. Depends on your system setup, one of this command may work for you:\n\npip install virtualenv if you’ve already have pip installed\n\npip3 install virtualenv if you have pip3/python3 installed\n\nbrew install pyenv if you are starting from a fresh Mac environment\nCreate a new python environment for a new project:\n\npython&lt;version&gt; -m venv &lt;virtual-environment-name&gt;\n\nFor example:\n\nmkdir projectA && cd projectA && python3.8 -m venv myFirstEnv\nActivate the Virtual Environemnt\n\nsource myFirstEnv/bin/activate\n\nYou should be able to the name of your virtual environment in your terminal path. It indicating your are within an activated environent.\nDeactivate the Virtual Environment Run deactivate in terminal will deactivate the project and leave the virtual environment\n\n\n\nOther Python tips\n\nDon’t share or check-in your python env folder. For example, if you are pushing your project to git, adding the env to the .gitignore file.\nUsing pip freeze &gt; requirements.txt to generate a file including all python libraries. Using pip install -r requirements.txt to install all dependencies for a given project"
-  },
-  {
-    "objectID": "posts/Quarto_blogging/index.html#vscode-extensions",
-    "href": "posts/Quarto_blogging/index.html#vscode-extensions",
-    "title": "Quarto_blogging",
-    "section": "VSCode & Extensions",
-    "text": "VSCode & Extensions\n\nDownload VSCode from the official side\nInstall Python extension\nInstall Quarto VS Code extension. You can follow Quarto’s tutorial\n(Optional) If you are using Virtual Environemtn, you need to select the right python intepreter for your project:\n\nFor choosing interpreter, press ctrl + p and then type &gt;Python: Select Interpreter (don’t forget the &gt; character! if it doesn’t show up, make sure you have installed python extension on your vs code) and select one of the options. It will show you available interpreters (virtual environments + the global environment) to choose.\n\n(Optional) Install Git extension. I personally still prefer using git from terminal, but sometimes the VS Code extension comes handle for quick commit."
-  },
-  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -32,7 +11,7 @@
     "href": "index.html",
     "title": "Angel’s Blabla Blog",
     "section": "",
-    "text": "Quarto_blogging\n\n\n\n\n\n\n\ncode\n\n\nbeginner\n\n\ndeep learning\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\nAngel Chen\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\nAngel Chen\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\nAngel Chen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
