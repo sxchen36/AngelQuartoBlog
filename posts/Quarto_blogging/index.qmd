@@ -4,6 +4,7 @@ author: "Angel Chen"
 date: "2023-06-12"
 categories: [code, beginner, deep learning]
 image: "image.jpg"
+draft: true
 ---
 ![](image.jpg)
 
@@ -58,12 +59,18 @@ Run `deactivate` in terminal will deactivate the project and leave the virtual e
   + For choosing interpreter, press `ctrl + p` and then type `>Python: Select Interpreter` (don't forget the `>` character! if it doesn't show up, make sure you have installed python extension on your vs code) and select one of the options. It will show you available interpreters (virtual environments + the global environment) to choose.
 * (Optional) Install Git extension. I personally still prefer using git from terminal, but sometimes the VS Code extension comes handle for quick commit.
 
-# Create Quarto Blog
+## Host blog on Github
+* Github can freely host your blog for you! Follow steps on [Github Page](https://pages.github.com/) to create your open repositories. I used the "Project site" to host my blog because I want to reserve the personal url ("https://github.com/<username>") to my personal website.
+* Follow instructions on [Quarto's website](https://quarto.org/docs/publishing/github-pages.html) to link your blog to your github repository. There are three options to do so, I am using the second option [Publish Command](https://quarto.org/docs/publishing/github-pages.html). It requires to render the quarto documents locally first (using VS Code's extension), then call `quarto publish gh-pages` to publish the rendered project to git, finally don't forget to `git commit & push` the source code. It's a bit tedious so I may swtich to the first option **Render to docs** in the future
 
-* Call `quarto publish gh-pages` inside your project in terminal to publish your first blog!
-* Note that above command does NOT check in your code. Do your diligent to git commit & git push to your git repository to save your source code
+
+
+# Other tips
+
 
 # Reference
+* https://chrwittm.github.io/posts/2022-10-21-how-i-created-this-blog/
+* https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html
 * https://quarto.org/docs/authoring/markdown-basics.html
 
 
